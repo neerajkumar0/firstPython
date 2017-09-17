@@ -14,13 +14,6 @@ class familyMember:
 	def DisplayMember(self):
 		print ("\nName : ", self.name, " Age : ", self.age, " Sex : ", self.sex , "\n\n");
 
-
-#member1 = familyMember("Neeraj Kumar", 40, 'M','F')
-#member2 = familyMember("Sandhya Kumari", 39, 'F','M')
-#member3 = familyMember("Rishabh Anand", 11, 'M','C')
-#member4 = familyMember("Tejas Anand", 6, 'M','C')
-
-
 class family:
 	'details of a family'
 	familyCount =0
