@@ -22,7 +22,6 @@ class family:
 		self.familyName = familyName
 		self.noOfMember = noOfMember
 		self.familyMembers = []
-#		familyCount += 1
 		count =0
 		while(count < self.noOfMember):
 			count += 1
@@ -32,6 +31,7 @@ class family:
 			memberType = input("\n member Type:")
 			member = familyMember(name,age,sex,memberType)
 			self.familyMembers.append(member)
+		family.familyCount += 1
 
 	def DisplayFamily(self):
 		print ("\n This is the ", self.familyName, " family");
