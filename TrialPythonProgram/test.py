@@ -37,12 +37,26 @@ class family:
 		print ("\n This is the ", self.familyName, " family");
 		print ("\n the family members are:");
 		count =0
+		father = False
+		mother = False
 		while(count < self.noOfMember):
-			self.familyMembers[count].DisplayMember()
+			if(father ==False and self.familyMembers[count].memberType == 'F'):				
+				print ("\nFather :")
+				self.familyMembers[count].DisplayMember()
+				father = True
+				count =0
+			if(father == True and mother == False and self.familyMembers[count].memberType == 'M'):				
+				print ("\nMother :")
+				self.familyMembers[count].DisplayMember()
+				mother = True
+				count =0
+			if(mother == True and self.familyMembers[count].memberType == 'C'):
+				print ("\nChild :")
+				self.familyMembers[count].DisplayMember()
 			count += 1
 
 
-family1 = family("Kumar Family", 4)
+family1 = family("Kumar ", 4)
 family1.DisplayFamily()
 
 input("\n\nPress the enter key to exit.");
