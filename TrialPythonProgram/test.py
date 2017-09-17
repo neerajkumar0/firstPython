@@ -40,12 +40,12 @@ class family:
 		father = False
 		mother = False
 		while(count < self.noOfMember):
-			if(father ==False and self.familyMembers[count].memberType == 'F'):				
+			if(father ==False and self.familyMembers[count].memberType == 'F'):
 				print ("\nFather :")
 				self.familyMembers[count].DisplayMember()
 				father = True
 				count =0
-			if(father == True and mother == False and self.familyMembers[count].memberType == 'M'):				
+			if(father == True and mother == False and self.familyMembers[count].memberType == 'M'):
 				print ("\nMother :")
 				self.familyMembers[count].DisplayMember()
 				mother = True
@@ -58,5 +58,6 @@ class family:
 
 family1 = family("Kumar ", 4)
 family1.DisplayFamily()
+
 
 input("\n\nPress the enter key to exit.");
